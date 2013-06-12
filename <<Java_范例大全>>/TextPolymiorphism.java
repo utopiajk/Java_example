@@ -85,9 +85,15 @@ public class TextPolymiorphism{
 		student.name = "Susan";
 		student.goToSchool(student);
 		//student.showInfo();
+
+		System.out.println();
+
 		student = new Undergraduate();
 		student.name = "Tom";
 		student.goToSchool(student);
+
+		System.out.println();
+
 		Pupil pupil = new Pupil();
 		pupil.goToSchool(pupil);
 		pupil.showInfo();
