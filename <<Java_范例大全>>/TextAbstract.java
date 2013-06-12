@@ -41,15 +41,23 @@ class Rectangle extends Geometric{					//继承 Geometric 求长方形的面积�
 }
 
 public class TextAbstract{							//操作抽象类求图形面积的类
+	
 	public static void main(String[] args){		
+
 		System.out.println("1.获得圆的面积与周长");	//Java 程序主入口
+
 		Circle circle = new Circle(4);				//创建圆对象实例
+
 		System.out.printf("圆的面积 %s %n", circle.getArea());
 		System.out.printf("圆的周长 %s %n", circle.getPerimeter());
+
 		System.out.printf("2.获得长方体的面积与周长");
+
 		Rectangle rectangle = new Rectangle(3,4);	//创建长方形对象实例
+		
 		System.out.printf("长方形的面积 %s %n", rectangle.getArea());
 		System.out.printf("长方形的周长 %s %n", rectangle.getPerimeter());
+
 	}
 }
 
