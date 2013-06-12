@@ -44,13 +44,13 @@ class Rectangle extends Geometric{
 
 public class TextAbstract{				
 	public static void main(String[] args){		
-		System.out.println("1.»ñµÃÔ²µÄÃæ»ýÓëÖÜ³¤");
+		System.out.println("1.获得圆的面积与周长");
 		Circle circle = new Circle(4);			
-		System.out.printf("Ô²µÄÃæ»ý: %s%n", circle.getArea());
-		System.out.printf("Ô²µÄÖÜ³¤: %s%n", circle.getPerimeter());
-		System.out.printf("2.»ñµÃ³¤·½ÐÎµÄÃæ»ýÓëÖÜ³¤");
+		System.out.printf("圆的面积 %s %n", circle.getArea());
+		System.out.printf("圆的周长 %s %n", circle.getPerimeter());
+		System.out.printf("2.获得长方体的面积与周长");
 		Rectangle rectangle = new Rectangle(3,4);	
-		System.out.printf("³¤·½ÐÎµÄÃæ»ý: %s%n", rectangle.getArea());
-		System.out.printf("³¤·½ÐÎµÄÖÜ³¤: %s%n", rectangle.getPerimeter());
+		System.out.printf("长方形的面积 %s %n", rectangle.getArea());
+		System.out.printf("长方形的周长 %s %n", rectangle.getPerimeter());
 	}
 }
