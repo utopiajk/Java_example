@@ -2,8 +2,8 @@
 abstract class Geometric{							//创建抽象类
 	String color = "block";
 	int weight = 2;
-	abstract float getArea();						//抽象方法求面积
-	abstract float getPerimeter();					//抽象方法求周长
+	abstract float getArea();						//抽象构造器求面积
+	abstract float getPerimeter();					//抽象构造器求周长
 }
 
 class Circle extends Geometric{						//继承 Geometric, 求圆的面积和周长
@@ -60,6 +60,20 @@ public class TextAbstract{							//操作抽象类求图形面积的类
 
 	}
 }
+
+
+/* 源程序解读 */
+
+/*(1) 用关键字 abstract 创建 Geometric 抽象类，并声明两个抽象构造器。
+	  默认的抽象方法拥有受保护的访问权限，即默认用 protected 访问修饰
+	  符修饰。简单地说，只有类内部和子类可以访问该成员。
+
+(2) Circle 和 Rectangle 类继承 Geometric 抽象类，必须实现所有的抽象
+	方法，否则需要在关键字 class 前加 abstract 称为抽象类。
+*/
+
+
+
 
 
 
